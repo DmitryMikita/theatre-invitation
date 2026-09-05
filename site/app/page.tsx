@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { playApplause } from './sound';
 
 // Relative path to the real QR image when it arrives, e.g. './ticket-qr.png'.
-const TICKET_QR: string = '';
+const TICKET_QR: string = './ticket-qr.png';
 export default function Home() {
   const [open, setOpen] = useState(false);
   const [flipped, setFlipped] = useState(false);
@@ -64,3 +64,4 @@ export default function Home() {
     </main>
   );
 }
+
