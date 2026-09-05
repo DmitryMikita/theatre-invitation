@@ -37,5 +37,6 @@ QR извлечён без потерь из предоставленного PD
 
 Фон `site/public-stage.jpg` создан встроенным Imagegen по запросу: «Cinematic photorealistic concert theatre stage with tall antique pipe organ, wooden violin on elegant chair at far right, many glowing ivory pillar candles along bottom and sides; dark central negative space for invitation overlay; black, burgundy and antique gold, realistic materials, subtle atmospheric haze, straight-on wide view. No text, UI, people, or curtains.»
 
-Аплодисменты синтезируются локально через Web Audio как нерегулярные хлопки зрителей с отражениями помещения. Звук запускается только при нажатии и завершается автоматически.
+Аплодисменты воспроизводятся из предоставленного пользователем файла `site/public/applause.mp3`. Звук запускается только при нажатии, завершается автоматически и останавливается при выключении звука или повторном открытии сцены.
+
 
