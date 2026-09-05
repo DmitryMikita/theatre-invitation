@@ -1,0 +1,9 @@
+site/node_modules/
+site/dist/
+site/.vite/
+site/.wrangler/
+site/*.tsbuildinfo
+*.zip
+theatre-stage-background.png
+site/.env*
+!site/.env.example
