@@ -36,14 +36,16 @@ export default function Home() {
       </section>}
       <section className="invitation" aria-label="Приглашение для Маши" aria-hidden={!open} inert={!open}>
         <p className="sr-only" id="invitation-summary">Маша, приглашаю тебя на свидание. Орган и скрипка при свечах. 3 октября в 18:00. Органный концертный зал КазНУИ, Женис, 33.</p>
-        <p className="eyebrow invitation-caption">ЭТОТ ВЕЧЕР — ДЛЯ ТЕБЯ</p>
         <button ref={ticket} type="button" className={`ticket ${flipped ? 'is-flipped' : ''}`} onClick={() => setFlipped(!flipped)} aria-describedby="invitation-summary" aria-label={flipped ? 'Показать приглашение' : 'Перевернуть билет и посмотреть QR'} aria-pressed={flipped}>
           <span className="ticket-rotator">
             <span className="ticket-face ticket-front" aria-hidden={flipped}>
               <span className="ticket-main">
                 <span className="ticket-topline"><span>ЛИЧНОЕ ПРИГЛАШЕНИЕ</span><span>№ 0310</span></span>
-                <span className="dedication">Маша,</span><span className="ticket-heading">приглашаю тебя<br />на <em>свидание.</em></span>
-                <span className="ticket-message">Пусть этот вечер звучит только для нас.</span>
+                <span className="ticket-copy">
+                  <span>Маша,</span>
+                  <span>приглашаю тебя на свидание.</span>
+                  <span>Пусть этот вечер звучит только для нас.</span>
+                </span>
                 <span className="programme">Орган <b>·</b> Скрипка <b>·</b> При свечах</span>
                 <span className="ticket-details"><span><small>КОГДА</small><strong>3 октября · 18:00</strong></span><span><small>ГДЕ</small><strong>Органный концертный зал КазНУИ</strong><span>Женис, 33</span></span></span>
                 <span className="ticket-bottom"><span>С предвкушением нашей встречи</span><span>↻ Переверни билет</span></span>
